@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>상품 페이지</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_product.css">
+    <script src='js/JQuery3.3.1.js'></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="container">
+                <div class="header">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header_list_left">
+                        <ul>
+                            <li class="home"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>홈<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                            <li class="men">
+                                <a href="#"><i class="fa fa-male" aria-hidden="true"></i>남성<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="categories men_cloth">
+                                    <li><a href="men.html"><img src="img/%EB%82%A8%EC%84%B1%EA%B0%80%EB%B0%A9.png" alt="남성가방">가방</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%9E%90%EC%BC%93.png" alt="자켓">자켓</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%B2%AD%EB%B0%94%EC%A7%80.png" alt="청바지">청바지</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%85%94%EC%B8%A0.png" alt="셔츠">셔츠</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%8B%A0%EB%B0%9C.png" alt="신발">신발</a></li>
+                                    <li><a href="men.html"><img src="img/%ED%8B%B0%EC%85%94%EC%B8%A0.png" alt="티셔츠">티셔츠</a></li>
+                                </ul>
+                            </li>
+                            <li class="women">
+                                <a href="#"><i class="fa fa-female" aria-hidden="true"></i>여성<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="categories women_cloth">
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EA%B0%80%EB%B0%A9.png" alt="여성가방">가방</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80.png" alt="블레이저">블레이저</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EB%93%9C%EB%A0%88%EC%8A%A4.png" alt="드레스">드레스</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EC%9E%90%EC%BC%93.png" alt="자켓">자켓</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EC%B2%AD%EB%B0%94%EC%A7%80.png" alt="청바지">청바지</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="mypage.html"><i class="fa fa-user" aria-hidden="true"></i>마이페이지<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="logo">
+                        <a href="index.html">Style <span>Up</span></a>
+                    </h1>
+                    <ul class="header_list_right">
+                        <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span>로그인</span></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>쇼핑카트</span></a></li>
+                    </ul>
+                    <div class="modal_overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="product_detail">
+        <div class="container">
+            <div class="row">
+                <div class="p_box">
+                    <div class="pimg_box">
+                        <div class="p_img">
+                            <ul>
+                                <li><a href="#"><img src="img/p_detail16.jpg" alt="상품이미지"></a></li>
+                                <li><a href="#"><img src="img/p_detail17.jpg" alt="상품이미지"></a></li>
+                                <li><a href="#"><img src="img/p_detail18.jpg" alt="상품이미지"></a></li>
+                            </ul>
+                        </div>
+                        <div class="p_bimg">
+                            <img src="img/p_detail16.jpg" alt="상품큰이미지">
+                        </div>
+                    </div>
+                    <div class="pdesc_box">
+                        <h2>남성 신발</h2>
+                        <span class="price">20000원</span>
+                        <div class="review_rate">
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                        </div>
+                        <p>신발의 핏선이 매우 아름다우며 매우심플하면서 강인한 남성스러운 이미지를 뽐낼수 있습니다. 밖에서 신기편하며 외출을 할떄에도 멋진스타일을 낼수있는 남성신발입니다.</p>
+                        <div class="select_box">
+                            <label for="p_color">색상:</label>
+                            <select name="color" id="p_color">
+                                <option value="gray">회색</option>
+                                <option value="black">검정색</option>
+                                <option value="red">빨간색</option>
+                                <option value="white">흰색</option>
+                            </select>
+                            <label for="p_size">사이즈:</label>
+                            <select name="size" id="p_size">
+                                <option value="small">small</option>
+                                <option value="medium">medium</option>
+                                <option value="large">large</option>
+                                <option value="X-large">X-large</option>
+                            </select>
+                        </div>
+                        <label for="p_num">수량</label>
+                        <input type="number" class="p_num" value="1">
+                        <div class="p_btn">
+                            <a href="#" class="cart_p"><i class="fa fa-cart-plus" aria-hidden="true"></i>카트에 담기</a>
+                            <a href="#" class="buy_p"><i class="fa fa-credit-card" aria-hidden="true"></i>구매하기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="review">
+        <div class="container">
+            <div class="row">
+                <div class="review_wrap">
+                    <div class="p_user_review">
+                        <h2>리뷰 <span>2</span></h2>
+                        <div class="review_box">
+                            <div class="user_img">
+                                <img src="img/사람얼굴.png" alt="유저이미진">
+                            </div>
+                            <div class="user_info">
+                                <h3>이상훈</h3>
+                                <span class="date">2020 2/15</span>
+                            </div>
+                            <div class="user_rate">
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </div>
+                            <p>신발이 제 스타일이네요.</p>
+                        </div>
+                        <div class="review_box">
+                            <div class="user_img">
+                                <img src="img/사람얼굴.png" alt="유저이미진">
+                            </div>
+                            <div class="user_info">
+                                <h3>이아람</h3>
+                                <span class="date">2020 2/15</span>
+                            </div>
+                            <div class="user_rate">
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </div>
+                            <p>남친 선물했더니 좋아하네요.</p>
+                        </div>
+                    </div>
+                    <div class="add_review">
+                        <h2>리뷰를 작성해주세요</h2>
+                        <form action="get">
+                            <div class="add_rating">
+                                <label name="rating">당신의 평점?</label>
+                                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                                <span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="write_review">
+                                <label for="add_review">리뷰 쓰기</label>
+                                <textarea name="write_review" id="add_review"></textarea>
+                            </div>
+                            <div class="user_add">
+                               <div class="name">
+                                    <label for="e_name">이름</label>
+                                    <input type="text" id="e_name">
+                               </div>
+                               <div class="day">
+                                    <label for="e_day">날짜</label>
+                                    <input type="text" id="e_day">
+                               </div>
+                            </div>
+                            <button type="submit">등록</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reference">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h2>추천 제품</h2>
+                    </div>
+                    <div class="product_wrap">
+                        <div class="product">
+                            <div class="p_header">
+                                <a href="#">
+                                    <img src="img/man_jean.jpg" alt="청바지">
+                                </a>
+                            </div>
+                            <div class="p_footer">
+                                <h3 class="p_title"><a href="#">청바지</a></h3>
+                                <div class="rate">
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                </div>
+                                <p class="price">30000원</p>
+                                <a href="#">카트 담기<i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="p_header">
+                                <a href="#">
+                                    <img src="img/man_shirts.jpg" alt="셔츠">
+                                </a>
+                            </div>
+                            <div class="p_footer">
+                                <h3 class="p_title"><a href="#">셔츠</a></h3>
+                                <div class="rate">
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                </div>
+                                <p class="price">25000원</p>
+                                <a href="#">카트 담기<i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="p_header">
+                                <a href="#">
+                                    <img src="img/w_dress2.jpg" alt="여성드레스">
+                                </a>
+                            </div>
+                            <div class="p_footer">
+                                <h3 class="p_title"><a href="#">드레스</a></h3>
+                                <div class="rate">
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                </div>
+                                <p class="price">25000원</p>
+                                <a href="#">카트 담기<i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="p_header">
+                                <a href="#">
+                                    <img src="img/w_bag.jpg" alt="백">
+                                </a>
+                            </div>
+                            <div class="p_footer">
+                                <h3 class="p_title"><a href="#">핸드백</a></h3>
+                                <div class="rate">
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                                </div>
+                                <p class="price">13000원</p>
+                                <a href="#">카트 담기<i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    <div id="cart">
+        <div class="cart_modal"></div>
+        <div class="shopping_cart">
+            <div class="close">
+                <a href="#" class="s_close_btn">닫기</a>
+            </div>
+            <ul class="shopping_list">
+                <li class="empty">
+                    <span class="empty_icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    <span class="s_text">상품이 존재하지 않습니다.</span>
+                </li>
+            </ul>
+            <div class="shopping_btn">
+                <a href="mypage.html" class="m_shopping">마이페이지로 이동 하기</a>
+                <a href="#" class="c_shopping">계속 쇼핑 하기</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <div class="app">
+                        <h2>앱 다운로드</h2>
+                        <a href="#"><img src="img/app-store.png" alt="앱스토어"></a>
+                        <a href="#"><img src="img/play-store.png" alt="플레이스토어"></a>
+                    </div>
+                    <div class="bank_info">
+                        <h2>은행 정보</h2>
+                        <p>예금주 : SJT <span>110-114-123452(우리은행)</span></p>
+                    </div>
+                    <div class="company_info">
+                        <h2>회사 정보</h2>
+                        <ul>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">입사지원</a></li>
+                            <li><a href="#">고객문의(02-1111-1111)</a></li>
+                            <li><a href="#">신고문의(02-2222-2222)</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h2>소셜 미디어</h2>
+                        <ul>
+                            <li><a href="#"><img src="img/facebook.png" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="img/twitter.png" alt="트위터"></a></li>
+                            <li><a href="#"><img src="img/kakao.png" alt="카카오"></a></li>
+                            <li><a href="#"><img src="img/instar.png" alt="인스타"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

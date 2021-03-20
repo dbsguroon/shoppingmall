@@ -1,0 +1,319 @@
+header{
+    position: relative;
+}
+
+
+/* my_info*/
+
+#my_info{
+    position:absolute;
+    left:0;
+    top:77px;
+    width: 100%;
+    background-color: #f1f3f5;
+    padding: 60px 0;
+}
+
+.my_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.u_info{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.u_info .img{
+    width: 80px;
+    height: 80px;
+    margin:0 auto 20px;
+    line-height: 80px;
+    text-align: center;
+    font-size:40px;
+    color:#fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.u_info h2{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.u_info a{
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: crimson;
+    color:#fff;
+    font-size:12px;
+    transition: all 0.3s ease;
+}
+
+.u_info a:hover{
+    font-weight: bold;
+}
+
+.my_status{
+    width: 100%;
+}
+
+.my_status ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border:1px solid #cfcfcf;
+}
+
+.my_status ul li{
+    flex-basis: 25%;
+    border-right: 1px solid #cfcfcf;
+    box-sizing: border-box;
+}
+
+.my_status ul li:last-child{
+    border-right: 0;
+}
+
+.my_status ul li span{
+    display: block;
+    font-size:20px;
+    padding:15px;
+    font-size:18px;
+}
+
+.my_status ul li span i{
+    margin-left:10px;
+    color:crimson;
+}
+.my_status ul li p{
+    padding: 20px;
+    box-sizing: border-box;
+    font-size:14px;
+}
+
+/*payment */
+
+#payment{
+    margin-top: 480px;
+    padding: 60px 0;
+}
+
+#payment h2{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#payment h2:before{
+    content:'';
+    position: absolute;
+    left:0;
+    top:130%;
+    width: 80px;
+    height: 2px;
+    background-color: crimson;
+}
+
+.payment table{
+    border:1px solid #cfcfcf;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.payment table th,td{
+  border:1px solid #cfcfcf;
+}
+
+.payment table  input{
+    width: 60%;
+}
+
+
+.payment table th{
+    padding: 20px;
+    width: 15%;
+}
+
+.payment table th:first-child{
+    width: 40%;
+}
+
+.payment table td{
+    padding: 10px;
+    font-size:14px;
+}
+
+.payment table td select{
+    border:1px solid #cfcfcf;
+}
+
+.payment table td:nth-child(4) input{
+   border:1px solid #cfcfcf;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+.user_pay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user_pay table{
+    width: 40%;
+    border-collapse: collapse;
+    text-align: center;
+    position: relative;
+}
+
+
+.user_pay table:before{
+    content:'';
+    width: 100%;
+    height: 2px;
+    background-color: crimson;
+    position: absolute;
+    right:0;
+    top:-10px;
+}
+
+.user_pay table td{
+    padding: 10px;
+    font-size:14px;
+}
+
+
+.user_pay h2{
+    text-align: right;
+}
+
+.user_cash{
+    width: 40%;
+    text-align: right;
+}
+
+
+.user_pay a{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:crimson;
+    color:#fff;
+    font-size:12px;
+    transition:all 0.3s ease;
+}
+
+.user_pay a:hover{
+    color:#fff;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:960px){
+    #my_info{
+        top:92px;
+    }
+    
+}
+
+@media (max-width:768px){
+    #my_info{
+        top:92px;
+    }
+    
+    .u_info .img{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size:30px;
+    }
+    .u_info h2{
+        font-size:20px;
+    }
+    .my_status ul li span{
+        font-size:14px;
+    }
+    .my_status ul li p{
+        font-size:12px;
+    }
+    
+    /*payment */
+    
+    #payment h2{
+        font-size:20px;
+    }
+    
+    .payment table th{
+        font-size:14px;
+    }
+    
+    .payment table td{
+        font-size:12px;
+    }
+    .user_pay table td{
+        font-size:12px;
+    }
+    
+}
+
+
+@media (max-width:600px){
+    .my_status ul li span{
+        padding: 15px 0;
+    }
+
+    .my_status ul li span i{
+        display: block;
+        margin: 10px auto 0;
+    }
+    
+    #payment{
+        padding: 0;
+        padding-bottom: 60px;
+    }
+    
+    #payment h2{
+        font-size:18px;
+    }
+    
+    .payment table th{
+         padding: 12px 9px 12px 9px;
+    }
+    
+    .payment table th:first-child{
+        width: 20%;
+    }
+    
+    .payment table input{
+        width: 90%;
+    }
+    
+    .payment table td{
+        padding:15px 10px;
+    }
+    
+    
+    .user_pay table{
+        width: 100%;
+    }
+    
+    .user_cash{
+        width: 100%;
+        text-align: center;
+    }
+    
+}

@@ -1,0 +1,81 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 22/06/2016 15:19
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-antique-dress:before { content: "\f100"; }
+.flaticon-big-anorak:before { content: "\f101"; }
+.flaticon-big-apron:before { content: "\f102"; }
+.flaticon-big-hat:before { content: "\f103"; }
+.flaticon-bikini-pieces:before { content: "\f104"; }
+.flaticon-camisa-con-tirantes:before { content: "\f105"; }
+.flaticon-dress-withot-sleeves:before { content: "\f106"; }
+.flaticon-football-shirt:before { content: "\f107"; }
+.flaticon-gardener-suit:before { content: "\f108"; }
+.flaticon-hanger-and-scarf:before { content: "\f109"; }
+.flaticon-hanger-with-trousers:before { content: "\f10a"; }
+.flaticon-housecoat:before { content: "\f10b"; }
+.flaticon-jacket-without-sleeves:before { content: "\f10c"; }
+.flaticon-jeans-back-view:before { content: "\f10d"; }
+.flaticon-jockey-cap:before { content: "\f10e"; }
+.flaticon-long-dress:before { content: "\f10f"; }
+.flaticon-masculine-underwear:before { content: "\f110"; }
+.flaticon-men-coat:before { content: "\f111"; }
+.flaticon-men-jacket:before { content: "\f112"; }
+.flaticon-men-trousers-front-view:before { content: "\f113"; }
+.flaticon-men-underwear:before { content: "\f114"; }
+.flaticon-panties-with-laces:before { content: "\f115"; }
+.flaticon-polka-dot-skirt:before { content: "\f116"; }
+.flaticon-rural-boot:before { content: "\f117"; }
+.flaticon-scarf-folded:before { content: "\f118"; }
+.flaticon-shirt-and-tie:before { content: "\f119"; }
+.flaticon-shirt-with-bow:before { content: "\f11a"; }
+.flaticon-shirt-with-vest:before { content: "\f11b"; }
+.flaticon-shoe-with-shoelace:before { content: "\f11c"; }
+.flaticon-short-sleeve-t-shirt:before { content: "\f11d"; }
+.flaticon-shorts-with-belt:before { content: "\f11e"; }
+.flaticon-sleeveless-shirt:before { content: "\f11f"; }
+.flaticon-sport-jacket:before { content: "\f120"; }
+.flaticon-sport-shoe:before { content: "\f121"; }
+.flaticon-sweater-with-hood:before { content: "\f122"; }
+.flaticon-t-shirt-with-smiley:before { content: "\f123"; }
+.flaticon-turtleneck:before { content: "\f124"; }
+.flaticon-two-gloves:before { content: "\f125"; }
+.flaticon-two-socks:before { content: "\f126"; }
+.flaticon-women-blouse:before { content: "\f127"; }
+.flaticon-women-coat:before { content: "\f128"; }
+.flaticon-women-hat:before { content: "\f129"; }
+.flaticon-women-high-boot:before { content: "\f12a"; }
+.flaticon-women-high-heel:before { content: "\f12b"; }
+.flaticon-women-swimsuit:before { content: "\f12c"; }
+.flaticon-women-trousers-back-side:before { content: "\f12d"; }
+.flaticon-women-trousers-front-view:before { content: "\f12e"; }
+.flaticon-women-vest:before { content: "\f12f"; }
+.flaticon-wool-hat:before { content: "\f130"; }
+.flaticon-wool-hat-with-earflap:before { content: "\f131"; }

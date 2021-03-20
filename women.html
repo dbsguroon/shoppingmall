@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>여성 페이지</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mw.css">
+    <script src='js/JQuery3.3.1.js'></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="container">
+                <div class="header">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="header_list_left">
+                        <ul>
+                            <li class="home"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>홈<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                            <li class="men">
+                                <a href="#"><i class="fa fa-male" aria-hidden="true"></i>남성<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="categories men_cloth">
+                                    <li><a href="men.html"><img src="img/%EB%82%A8%EC%84%B1%EA%B0%80%EB%B0%A9.png" alt="가방">가방</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%9E%90%EC%BC%93.png" alt="자켓">자켓</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%B2%AD%EB%B0%94%EC%A7%80.png" alt="청바지">청바지</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%85%94%EC%B8%A0.png" alt="셔츠">셔츠</a></li>
+                                    <li><a href="men.html"><img src="img/%EC%8B%A0%EB%B0%9C.png" alt="신발">신발</a></li>
+                                    <li><a href="men.html"><img src="img/%ED%8B%B0%EC%85%94%EC%B8%A0.png" alt="티셔츠">티셔츠</a></li>
+                                </ul>
+                            </li>
+                            <li class="women">
+                                <a href="#"><i class="fa fa-female" aria-hidden="true"></i>여성<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="categories women_cloth">
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EA%B0%80%EB%B0%A9.png" alt="여성가방">가방</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EB%B8%94%EB%A0%88%EC%9D%B4%EC%A0%80.png" alt="블레이저">블레이저</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EB%93%9C%EB%A0%88%EC%8A%A4.png" alt="드레스">드레스</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EC%9E%90%EC%BC%93.png" alt="자켓">자켓</a></li>
+                                    <li><a href="women.html"><img src="img/%EC%97%AC%EC%84%B1%EC%B2%AD%EB%B0%94%EC%A7%80.png" alt="청바지">청바지</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="mypage.html"><i class="fa fa-user" aria-hidden="true"></i>마이페이지<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </nav>
+                    <h1 class="logo">
+                        <a href="index.html">Style <span>Up</span></a>
+                    </h1>
+                    <ul class="header_list_right">
+                        <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span>로그인</span></a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>쇼핑카트</span></a></li>
+                    </ul>
+                    <div class="modal_overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="all_header">
+        <div class="container">
+            <div class="row">
+                <div class="all_header">
+                    <div class="all_title">
+                         <div class="all_img">
+                             <img src="img/woman_title_img.jpg" alt="맨제품">
+                             <h2>여성 제품</h2>
+                         </div>
+                    </div>
+                    <div class="p_categories">
+                        <ul class="c_left">
+                            <li data-filter="ALL"><a href="#">모두</a></li>
+                            <li data-filter="bag"><a href="#">가방</a></li>
+                            <li data-filter="blazers"><a href="#">블레이저</a></li>
+                            <li data-filter="dress"><a href="#">드레스</a></li>
+                            <li data-filter="jacket"><a href="#">자켓</a></li>
+                            <li data-filter="jean"><a href="#">청바지</a></li>
+                        </ul>
+                        <ul class="c_right">
+                            <li>
+                                <a href="#"><i class="fa fa-filter" aria-hidden="true"></i>필터</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>검색</a></li>
+                        </ul>
+                    </div>
+                    <div class="p_filter">
+                        <div class="sort">
+                            <ul>
+                                <li><a href="#"><strong>종류</strong></a></li>
+                                <li><a href="#">기본값</a></li>
+                                <li><a href="#">인기도</a></li>
+                                <li><a href="#">별점</a></li>
+                                <li><a href="#">낮은가격순으로</a></li>
+                                <li><a href="#">높은가격순으로</a></li>
+                            </ul>
+                        </div>
+                        <div class="sort_p">
+                            <ul>
+                                <li><a href="#"><strong>가격</strong></a></li>
+                                <li><a href="#">10000원</a></li>
+                                <li><a href="#">10000~15000원</a></li>
+                                <li><a href="#">15000~20000원</a></li>
+                                <li><a href="#">20000~25000원</a></li>
+                                <li><a href="#">300000원</a></li>
+                            </ul>
+                        </div>
+                        <div class="sort_c">
+                            <ul>
+                                <li><a href="#"><strong>색상</strong></a></li>
+                                <li><a href="#"><span class="color blue"></span>파랑</a></li>
+                                <li><a href="#"><span class="color black"></span>검정</a></li>
+                                <li><a href="#"><span class="color gray"></span>회색</a></li>
+                                <li><a href="#"><span class="color yellow"></span>노랑</a></li>
+                                <li><a href="#"><span class="color green"></span>녹색</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p_search">
+                        <input type="search" placeholder="상품을 검색하세요">
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="all_product">
+        <div class="container">
+            <div class="row">
+                <ul class="item_box">
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag1.jpg" alt="백1">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item blazers">
+                        <div class="item_img">
+                            <img src="img/w_all_blazers1.jpg" alt="블레이저1">
+                        </div>
+                        <div class="item_desc">
+                            <span>블레이저</span>
+                            <h2>아이템 블레이저</h2>
+                            <p>30000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress1.jpg" alt="드레스1">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket1.jpg" alt="자켓1">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean1.jpg" alt="청바지1">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag2.jpg" alt="백2">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item blazers">
+                        <div class="item_img">
+                            <img src="img/w_all_blazers2.jpg" alt="블레이저2">
+                        </div>
+                        <div class="item_desc">
+                            <span>블레이저</span>
+                            <h2>아이템 블레이저</h2>
+                            <p>30000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress2.jpg" alt="드레스2">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket2.jpg" alt="자켓2">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean2.jpg" alt="청바지2">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag3.jpg" alt="백3">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item blazers">
+                        <div class="item_img">
+                            <img src="img/w_all_blazers3.jpg" alt="블레이저3">
+                        </div>
+                        <div class="item_desc">
+                            <span>블레이저</span>
+                            <h2>아이템 블레이저</h2>
+                            <p>30000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress3.jpg" alt="드레스3">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket3.jpg" alt="자켓3">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean3.jpg" alt="청바지3">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag4.jpg" alt="백4">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item blazers">
+                        <div class="item_img">
+                            <img src="img/w_all_blazers4.jpg" alt="블레이저4">
+                        </div>
+                        <div class="item_desc">
+                            <span>블레이저</span>
+                            <h2>아이템 블레이저</h2>
+                            <p>30000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress4.jpg" alt="드레스4">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket4.jpg" alt="자켓4">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean4.jpg" alt="청바지4">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag5.jpg" alt="백5">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress5.jpg" alt="드레스5">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket5.jpg" alt="자켓5">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean5.jpg" alt="청바지5">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag6.jpg" alt="백6">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress6.jpg" alt="드레스6">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket6.jpg" alt="자켓6">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean6.jpg" alt="청바지6">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag7.jpg" alt="백7">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress7.jpg" alt="드레스7">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket7.jpg" alt="자켓7">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean7.jpg" alt="청바지7">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item bag">
+                        <div class="item_img">
+                            <img src="img/w_all_bag8.jpg" alt="백8">
+                        </div>
+                        <div class="item_desc">
+                            <span>가방</span>
+                            <h2>아이템 가방</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress8.jpg" alt="드레스8">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket8.jpg" alt="자켓8">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean8.jpg" alt="청바지8">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress9.jpg" alt="드레스9">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jacket">
+                        <div class="item_img">
+                            <img src="img/w_all_jacket9.jpg" alt="자켓9">
+                        </div>
+                        <div class="item_desc">
+                            <span>자켓</span>
+                            <h2>아이템 자켓</h2>
+                            <p>25000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean9.jpg" alt="청바지9">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress10.jpg" alt="드레스10">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean10.jpg" alt="청바지10">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                    <li class="item dress">
+                        <div class="item_img">
+                            <img src="img/w_all_dress11.jpg" alt="드레스11">
+                        </div>
+                        <div class="item_desc">
+                            <span>드레스</span>
+                            <h2>아이템 드레스</h2>
+                            <p>15000원</p>
+                        </div>
+                    </li>
+                    <li class="item jean">
+                        <div class="item_img">
+                            <img src="img/w_all_jean11.jpg" alt="청바지11">
+                        </div>
+                        <div class="item_desc">
+                            <span>청바지</span>
+                            <h2>아이템 청바지</h2>
+                            <p>20000원</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="more_product">더 보기</a>
+            </div>
+        </div>
+    </section>
+    <div id="cart">
+        <div class="cart_modal"></div>
+        <div class="shopping_cart">
+            <div class="close">
+                <a href="#" class="s_close_btn">닫기</a>
+            </div>
+            <ul class="shopping_list">
+                <li class="empty">
+                    <span class="empty_icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    <span class="s_text">상품이 존재하지 않습니다.</span>
+                </li>
+            </ul>
+            <div class="shopping_btn">
+                <a href="mypage.html" class="m_shopping">마이페이지로 이동 하기</a>
+                <a href="#" class="c_shopping">계속 쇼핑 하기</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <div class="app">
+                        <h2>앱 다운로드</h2>
+                        <a href="#"><img src="img/app-store.png" alt="앱스토어"></a>
+                        <a href="#"><img src="img/play-store.png" alt="플레이스토어"></a>
+                    </div>
+                    <div class="bank_info">
+                        <h2>은행 정보</h2>
+                        <p>예금주 : SJT <span>110-114-123452(우리은행)</span></p>
+                    </div>
+                    <div class="company_info">
+                        <h2>회사 정보</h2>
+                        <ul>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">입사지원</a></li>
+                            <li><a href="#">고객문의(02-1111-1111)</a></li>
+                            <li><a href="#">신고문의(02-2222-2222)</a></li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <h2>소셜 미디어</h2>
+                        <ul>
+                            <li><a href="#"><img src="img/facebook.png" alt="페이스북"></a></li>
+                            <li><a href="#"><img src="img/twitter.png" alt="트위터"></a></li>
+                            <li><a href="#"><img src="img/kakao.png" alt="카카오"></a></li>
+                            <li><a href="#"><img src="img/instar.png" alt="인스타"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
